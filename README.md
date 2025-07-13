@@ -4,13 +4,6 @@
 
 This repository documents the design and fabrication of a Go-Kart chassis as part of a collaborative engineering project. The primary objective was to develop a lightweight, structurally sound frame capable of supporting vehicle components and ensuring driver safety. The chassis was built from steel tubing and fabricated using conventional manufacturing techniques: cutting, grinding, and welding. 
 
-## Objectives
-
-* Design a space-frame chassis that is lightweight and strong.
-* Ensure driver safety through an integrated roll cage.
-* Maintain a low center of gravity for better handling.
-* Facilitate easy assembly and cost-effective fabrication.
-
 ## Team contributions
 
 The important responsibilities to be handled were Designing, Analysis and finally the fabrication process which was carried out by the whole team. The design team modeled the chassis geometry using CAD and various load and stress calculations were performed using Ansys software by the analysis team. The base of a manufacturing process is deciding the material. I was responsible for researching and finalizing the chassis material. I also contributed in the fabrication process especially in the cutting and grinding processes.
@@ -24,7 +17,7 @@ The important responsibilities to be handled were Designing, Analysis and finall
 
 ## Material Selection Rationale
 
-Several materials were evaluated based on strength, ductility, weldability, availability, and cost:
+Several materials were evaluated based on strength, ductility, weldability, availability, and cost. The selection of material was done keeping in mind design constraints like the composition of material, final weight of chassis and dimension restraints and also keeping in mind the price limitations.
 
 | Material  | Yield Strength (MPa) | Weldability | Cost   | Notes                             |
 | --------- | -------------------- | ----------- | ------ | --------------------------------- |
@@ -33,7 +26,13 @@ Several materials were evaluated based on strength, ductility, weldability, avai
 | AISI 1026 | \~415                | Fair        | Medium | Higher strength, harder to weld   |
 | AISI 4130 | \~560                | Moderate    | High   | High strength, TIG welding needed |
 
-After analyzing these options, **AISI 1018 Cold Drawn Seamless Steel** was selected for the following reasons:
+The materials considered were AISI 1018, AISI 4130, AISI 1026 and AISI 1020 among which AISI 1020 is not durable at the price it is available while AISI 1018 has better strength at arouund same price range; AISI 4130 has high strength to weight ratio but due to high carbon percentage, it is more vulnerable to machining and at the same time it is very expensive.
+
+The modulus of elasticity of AISI 1018 is similar to that of AISI 4130 and at the same time, AISI 4130 is highly expepnsive so using AISI 1018 won’t affect the weight and stiffness in a member of same geometry.
+
+The material chosen is AISI 1018 carbon steel. It has a good carbon content of 0.14-0.2 percentage which gives the material a sufficient hardness and yield strength, maintaining a good balance between ductility and toughness. It also has an excellent weldability and machinability and hence considered as best steel for carburizing parts.
+
+After analyzing these options, **AISI 1018 Seamless Steel** was selected for the following reasons:
 
 * Excellent weldability (suitable for MIG welding used in fabrication)
 * Adequate strength and ductility
@@ -64,7 +63,7 @@ All welds were visually inspected for porosity and undercut. Any flawed sections
 
 ## Final Outcome
 
-<img width="302" height="268" alt="Screenshot 2025-07-12 221146" src="https://github.com/user-attachments/assets/fabfe2c4-40d0-49df-b269-a05d573c11a8" />
+<img width="322" height="263" alt="Screenshot 2025-07-13 210644" src="https://github.com/user-attachments/assets/e9d3efa1-bc32-4842-9937-aa5762fe8d10" />
 
 *Figure: Isometric view of the fabricated Go-Kart chassis.*
 
